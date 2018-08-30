@@ -19,7 +19,7 @@ class Safety_Exit_Admin {
     }
 
     public function init() {
-        add_action( 'admin_menu', array( $this, 'safety_exit_add_options_page' ) );
+        // add_action( 'admin_menu', array( $this, 'safety_exit_add_options_page' ) );
         add_action('admin_init', array( $this, 'plugin_admin_init'));
         add_action('update_option_sftExt_settings', array($this, 'sftExt_generateCSS'));
     }

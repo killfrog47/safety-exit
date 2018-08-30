@@ -1,10 +1,6 @@
 <?php
-	$sftExtSettings = get_option('sftExt_settings');
-	var_dump($sftExtSettings['sftExt_position']);
-
+	$sftExtSettings = get_option('sftExt_settings',array('sftExt_position' => 'bottom right', 'sftExt_type' => 'rectangle'));
 	$classes = $sftExtSettings['sftExt_position'] . ' ' . $sftExtSettings['sftExt_type'];
-
-	// if($sftExtSettings['sftExt_btn-type'])
 ?>
 
 <aside id="sftExt-frontend-button" class="<?= $classes; ?>">
