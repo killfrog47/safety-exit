@@ -32,7 +32,8 @@
       color: white;
       text-transform: uppercase;
       padding-left: 25px;
-      position: relative; }
+      position: relative;
+      line-height: 1.3; }
       #sftExt-frontend-button.rectangle .sftExt-inner:before {
         position: absolute;
         content: '';
