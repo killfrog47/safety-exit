@@ -9,3 +9,29 @@
 	text-align: center;
 	cursor: pointer;
 }
+
+#sftExt_admin {
+	.container {
+		width: 100%;
+		height: auto;
+
+		.row {
+			display: flex;
+			flex-direction: row;
+			.col {
+				flex: 1;
+				position: relative;
+			}
+		}
+	}
+}
+@import 'frontend';
+
+#sftExt-frontend-button {
+	    position: fixed;
+		z-index: initial;
+		top: initial !important;
+		bottom: initial !important;
+		left: initial !important;
+		right: initial !important;
+}

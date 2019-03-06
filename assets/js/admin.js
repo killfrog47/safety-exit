@@ -2,7 +2,7 @@ jQuery(function($){
 
 	$('#sftExt_type').on('change', function(e){
 		if($(this).val() == 'rectangle') {
-			$('.rectangle-only').removeClass('hidden')
+			$('.rectangle-only').removeClass('hidden');
 		}else{
 			$('.rectangle-only').addClass('hidden')
 		}
@@ -50,7 +50,7 @@ jQuery(function($){
 		$('#sftExt_color_picker_btn_font_color').css({
 			'background-color': color.rgbaString
 		});
-    };
+	};
 })
 // sftExt_icon_display
 
