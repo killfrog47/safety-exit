@@ -48,12 +48,18 @@
 		border-radius: <?= $sftExtSettings['sftExt_border_radius']; ?>px;
 	}
 </style>
-<aside id="sftExt-frontend-button" class="<?= $classes; ?>" data-new-tab="<?= $sftExtSettings['sftExt_new_tab_url']; ?>" data-url="<?= $sftExtSettings['sftExt_current_tab_url']; ?>">
-	<?php if($sftExtSettings['sftExt_type'] != 'round' && $sftExtSettings['sftExt_type'] != 'square') { ?>
+
+<?php
+if($sftExtSettings['sftExt_type'] != 'round' && $sftExtSettings['sftExt_type'] != 'square') {
+	$showText = true;
+}
+?>
+<button aria-label="<?= $showText ? $sftExtSettings['sftExt_rectangle_text'] : 'Safety Exit'; ?>" name="Safety Exit Button" title="Safety Exit Button" type="button" id="sftExt-frontend-button" class="<?= $classes; ?>" data-new-tab="<?= $sftExtSettings['sftExt_new_tab_url']; ?>" data-url="<?= $sftExtSettings['sftExt_current_tab_url']; ?>">
+	<?php if($showText) { ?>
 		<div class="sftExt-inner"><?= $icon; ?><?= $sftExtSettings['sftExt_rectangle_text']; ?></div>
 	<?php }else{ ?>
 		<?= $icon; ?>
 	<?php } ?>
-</aside>
+</button>
 
 <?php endif; ?>
